@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Blip Quiz Game
+    // Bootstrap Core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='css/stylish-portfolio.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    // Navigation
+    a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
+      i.fa.fa-bars
+    nav#sidebar-wrapper
+      ul.sidebar-nav
+        a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
+          i.fa.fa-times
+        li.sidebar-brand
+          a(href='#top', onclick='$("#menu-close").click();') Menu
+        li
+          a(href='/', onclick='$("#menu-close").click();') Home
+        li
+          a(href='#howtoplay', onclick='$("#menu-close").click();') How To Play
+        li
+          a(href='#about', onclick='$("#menu-close").click();') About
+        li
+          a(href='#contacts', onclick='$("#menu-close").click();') Contacts
+    // Header
+    header#top.header
+      .text-vertical-center
+        .container
+            .row
+                .col-lg-12.col-sm-12.text-center
+                    block content
+    // How To Play
+    section#howtoplay.howtoplay
+      .container
+        .row
+          .col-lg-12.text-center
+            h2 It will show you how to play
+            p.lead
+              | 10 situations, 3 possible choices each, select your perfect solution
+        // /.row
+      // /.container
+    // About
+    section#about.about.bg-primary
+      .container
+        .row.text-center
+          .col-lg-10.col-lg-offset-1
+            h2 About
+            hr.small
+            .row
+              .col-md-12.col-sm-12
+                  p This seems to be the best way to show you how much I want this
+            // /.row (nested)
+          // /.col-lg-10
+        // /.row
+      // /.container
+    // Footer
+    footer#contacts
+      .container
+        .row
+          .col-lg-10.col-lg-offset-1.text-center
+            ul.list-inline
+              li
+                a(href='#')
+                  i.fa.fa-facebook.fa-fw.fa-3x
+              li
+                a(href='#')
+                  i.fa.fa-linkedin.fa-fw.fa-3x
+              li
+                a(href='mailto:name@example.com')
+                  i.fa.fa-envelope.fa-fw.fa-3x
+            hr.small
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Custom Theme JavaScript
+    script(src='js/menu.js')

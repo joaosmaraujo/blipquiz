@@ -1,0 +1,20 @@
+extends layout
+		
+block content
+	h1
+		span Welcome to
+	h1
+		span 
+			|	So you think you can manage
+		img.blip-image(src='img/blip_color.png')
+		span  !
+	a.btn.btn-start.btn-lg(href='/question')
+		|  Start Playing 
+		span.glyphicon.glyphicon-play-circle
+	br
+	a.btn.btn-instructions.btn-lg(href='#howtoplay')
+		|  How To Play 
+		span.glyphicon.glyphicon-question-sign
+	a.btn.btn-about.btn-lg(href='#about')
+		|  About 
+		span.glyphicon.glyphicon-info-sign

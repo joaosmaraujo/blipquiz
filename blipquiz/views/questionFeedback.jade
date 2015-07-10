@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	h2.questionScore
+		span
+			|	Congrats!
+			br
+			br
+			|   You scored
+			br
+			=questionScore
+			|	 blips
+	br
+	div.fundobranco
+		h2.totalScore
+			|	TotalScore:  
+			= score
+			|	 blips
+		h2.questionText=feedback
+		br
+		br
+		p.unselectedFeedback
+			|   If you have selected...
+		br
+		p.unselectedFeedback
+			|      
+			=unselectedOption1
+		p.unselectedFeedback
+			|   
+			=unselectedFeedback1
+		br
+		p.unselectedFeedback
+			|      
+			=unselectedOption2
+		p.unselectedFeedback
+			|   
+			=unselectedFeedback2
+		br
+		form(method="get", action="/question")
+			p
+				input.btn.btn-dark.btn-lg(id = "submit", type = "submit", value = "Proceed")

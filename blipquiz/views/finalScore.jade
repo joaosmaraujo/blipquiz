@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	p#finalScore
+		|	Congrats, Your Final Score is:
+	p=score
+	form(method="get", action="/")
+		p
+			input(id = "submit", type = "submit", value = "Play Again")
+	

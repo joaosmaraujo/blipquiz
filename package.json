@@ -1,0 +1,23 @@
+{
+  "name": "blipquiz",
+  "version": "1.0.0",
+  "description": "blip quiz game",
+  "main": "index.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "blip",
+    "quiz",
+    "game"
+  ],
+  "author": "joaosmaraujo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.0"
+  }
+}
