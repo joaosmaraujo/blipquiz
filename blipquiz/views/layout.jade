@@ -40,30 +40,26 @@ html(lang='en')
     // Header
     header#top.header
       .text-vertical-center
-        .container
-            .row
-                .col-lg-12.col-sm-12.text-center
-                    block content
+        block content
     // How To Play
     section#howtoplay.howtoplay
       .container
-        .row
-          .col-lg-12.text-center
-            h2 It will show you how to play
-            p.lead
-              | 10 situations, 3 possible choices each, select your perfect solution
+        .row.text-center
+            h2 How To Play
+            hr.small
+            p.lead 10 situations
+            p.lead 10 problems to solve
+            p.lead 3 possible choices for each one
+            p.lead Do your magic and select the one who suits you best
         // /.row
       // /.container
     // About
     section#about.about.bg-primary
       .container
         .row.text-center
-          .col-lg-10.col-lg-offset-1
             h2 About
             hr.small
-            .row
-              .col-md-12.col-sm-12
-                  p This seems to be the best way to show you how much I want this
+            p.lead This seems to be the best way to show you how much I want this
             // /.row (nested)
           // /.col-lg-10
         // /.row
@@ -83,7 +79,6 @@ html(lang='en')
               li
                 a(href='mailto:name@example.com')
                   i.fa.fa-envelope.fa-fw.fa-3x
-            hr.small
     // jQuery
     script(src='js/jquery.js')
     // Bootstrap Core JavaScript

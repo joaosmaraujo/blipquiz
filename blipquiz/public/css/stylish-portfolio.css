@@ -51,7 +51,7 @@ body {
 }
 
 .blip-image {
-    height: 2em;
+    height: 2.5em;
 }
 
 
@@ -126,7 +126,7 @@ body {
     background-color: rgba(251,97,25,0.8);
 }
 
-.btn-instructions:active, .btn-start:focus {
+.btn-instructions:active, .btn-instructions:focus {
     color: rgba(0,158,209,1);
     background-color: rgba(255,255,255,0.8);
 }
@@ -146,7 +146,7 @@ body {
     background-color: rgba(254,29,61,0.8);
 }
 
-.btn-about:active, .btn-start:focus {
+.btn-about:active, .btn-about:focus {
     color: rgba(0,158,209,1);
     background-color: rgba(255,255,255,0.8);
 }
@@ -155,14 +155,14 @@ body {
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,158,209,0.7);
+    background-color: rgba(0,158,209,0.8);
     font-weight: 500;
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: rgba(0,158,209,0.7);
+    color: rgba(0,158,209,0.8);
     background-color: #fff;
 }
 
@@ -183,6 +183,11 @@ body {
 
 hr.small {
     max-width: 100px;
+    border-color: rgba(0,158,209,0.8);
+}
+
+hr {
+    border-color: rgba(0,158,209,1)
 }
 
 /* Side Menu */
@@ -195,7 +200,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: rgba(0,158,209,0.7);
+    background: rgba(0,158,209,0.8);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -225,7 +230,7 @@ hr.small {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: rgba(0,158,209,0.7);
+    color: rgba(0,158,209,0.8);
     background: #fff;
 }
 
@@ -245,7 +250,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: rgba(0,158,209,0.7);
+    color: rgba(0,158,209,0.8);
     background: #fff;
 }
 
@@ -288,12 +293,18 @@ hr.small {
 
 .howtoplay {
     padding: 50px 0;
+    color: rgba(75,75,75,1);
 }
 
 /* About */
 
 .about {
     padding: 50px 0;
+    color: rgba(255,255,255,1);
+}
+
+.about hr {
+    border-color: rgba(255,255,255,1);
 }
 
 .service-item {

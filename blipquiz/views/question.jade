@@ -1,24 +1,26 @@
 extends layout
 
 block content
-	div.fundobranco
-		h2.questionNum
-			|	Question 
-			= questionNumber
-			|  / 10
-		h2.totalScore
-			|	TotalScore:  
-			= score
-			|	 blips
-		h2.questionText=questionText
-		br
-		form#answers(method="post", action="/questionFeedBack") 
-			p
-				input.possibleanswer#answer1(type="radio", name="resposta", style="display:none", value=answer1score)
-				label.btn.btn-dark.btn-lg(for = "answer1")=answer1
-			p
-				input.possibleanswer#answer2(type="radio", name="resposta", style="display:none", value=answer2score)
-				label.btn.btn-dark.btn-lg(for = "answer2")=answer2
-			p
-				input.possibleanswer#answer3(type="radio", name="resposta", style="display:none", value=answer3score)
-				label.btn.btn-dark.btn-lg(for = "answer3")=answer3
+	.container
+		.row
+			div.fundobranco
+				h2.questionNum
+					|	Question 
+					= questionNumber
+					|  / 10
+				h2.totalScore
+					|	TotalScore:  
+					= score
+					|	 blips
+				h2.questionText=questionText
+				br
+				form#answers(method="post", action="/questionFeedBack") 
+					p
+						input.possibleanswer#answer1(type="radio", name="resposta", style="display:none", value=answer1score)
+						label.btn.btn-dark.btn-lg(for = "answer1")=answer1
+					p
+						input.possibleanswer#answer2(type="radio", name="resposta", style="display:none", value=answer2score)
+						label.btn.btn-dark.btn-lg(for = "answer2")=answer2
+					p
+						input.possibleanswer#answer3(type="radio", name="resposta", style="display:none", value=answer3score)
+						label.btn.btn-dark.btn-lg(for = "answer3")=answer3

@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/question', function(req, res, next) {
-	if (counter.questionNumber <= questions.length) {
+	if (counter.questionNumber < questions.length + 1) {
         question = questions[counter.questionNumber - 1];
         question.possibleAnswers.sort(function(){return Math.round(Math.random()) - 0.5;});
         res.render('question', { 

@@ -2,9 +2,9 @@
   "name": "blipquiz",
   "version": "1.0.0",
   "description": "blip quiz game",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

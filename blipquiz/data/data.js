@@ -79,9 +79,9 @@ var Answer = require('../model/answer');
     
     var question6 = new Question("Every teams got product deliveries today and everybody is real busy with that. You noticed there's one intern who needs help with his task to keep doing it. Find out someone available who can help him.");
 
-    var answer61 = new Answer("Another Random Young Intern", "When you asked him, the problem was already solved. Some Blipper had already volunteered to help the intern to solve the problem. That's pure Blip culture!", 0);
-    var answer62 = new Answer("Some tech expert", "You have to call him back not to come in or just drink a coffee with him. Before his arrival, some Blipper had already volunteered to help the intern to solve the problem. That's pure Blip culture! ", 0);
-    var answer63 = new Answer("João Araújo", "Before you asked him, he had already volunteered to help the intern and together they solved the problem!", 0);
+    var answer61 = new Answer("Another Random Young Intern", "When you asked him, the problem was already solved. Some Blipper had already volunteered to help the intern to solve the problem. That's pure Blip culture!", 250);
+    var answer62 = new Answer("Some tech expert", "You have to call him back not to come in or just drink a coffee with him. Before his arrival, some Blipper had already volunteered to help the intern to solve the problem. That's pure Blip culture! ", 100);
+    var answer63 = new Answer("João Araújo", "Before you asked him, he had already volunteered to help the intern and together they solved the problem!", 500);
     
     question6.possibleAnswers.push(answer61);
     question6.possibleAnswers.push(answer62);

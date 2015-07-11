@@ -1,10 +1,16 @@
 extends layout
 
 block content
-	p#finalScore
-		|	Congrats, Your Final Score is:
-	p=score
+	h2.questionScore
+		span
+			|	Congrats, Your Final Score is:
+			br
+			br
+			=score
+			|	 blips
+	br
+	br
 	form(method="get", action="/")
 		p
-			input(id = "submit", type = "submit", value = "Play Again")
+			input.btn.btn-dark.btn-lg(id = "submit", type = "submit", value = "Play Again")
 	
